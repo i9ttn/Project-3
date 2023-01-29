@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template 2</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/setting.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="userName">ABOOD</div>
+            <ul>
+                <li onclick="location.href='dashboard.html'">
+                    <i class="fa-regular fa-window-minimize"></i>
+                    <a>Dashboard</a>
+                </li>
+                <li onclick="location.href='Setting.html'" target="_self">
+                    <i class="fa-sharp fa-solid fa-gear"></i>
+                    <a>Setting</a>
+                </li>
+                <li onclick="location.href='profile.html'" target="_self">
+                    <i class="fa-solid fa-user"></i>
+                    <a>Profile</a>
+                </li>
+                <li onclick="location.href='projects.html'" target="_self">
+                    <i class="fa-sharp fa-solid fa-diagram-project"></i>
+                    <a>Projects</a>
+                </li>
+                <li onclick="location.href='courses.html'" target="_self">
+                    <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                    <a>Courses</a>
+                </li>
+                <li onclick="location.href='friends.html'" target="_self">
+                    <i class="fa-solid fa-user-group"></i>
+                    <a>Friends</a>
+                </li>
+                <li onclick="location.href='files.html'" target="_self">
+                    <i class="fa-regular fa-file"></i>
+                    <a>Files</a>
+                </li>
+                <li onclick="location.href='plans.html'" target="_self">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <a>Plans</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="dashboard">
+            <header>
+                <div class="search">
+                <input type="text" placeholder="Search Keyword">
+                <i class="fas fa-search"></i>
+                </div>
+                <div class="img">
+                    <i class="far fa-bell"></i>
+                    <img src="images/avatar-01.png" alt="">
+                </div>
+            </header>
+            <div class="main-container">
+                <h1 class="title">Setting</h1>
+                <div class="dash">
+                    <div class="container site">
+                        <div class="titleAndP-1">
+                            <h2 class="main-title">site Control</h2>
+                            <p class="main-p">Control The Website If There Is Maintenance</p>
+                        </div>
+                        <div class="setting">
+                            <div>
+                                <div>
+                                    <h3>Website Control</h3>
+                                    <p>Open/Close Website And Type The Reason</p>
+                                </div>    
+                                <div>
+                                    <label>
+                                        <input class="toggle-checkbox" type="checkbox" checked />
+                                        <div class="toggle-swich"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <textarea name="" placeholder="Close Message cotent" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container general">
+                        <div class="titleAndP-1">
+                            <h2 class="main-title">General Info</h2>
+                            <p class="main-p">General Information About Your Account</p>
+                        </div>
+                        <div class="setting">
+                            <div>
+                                <div class="first">
+                                    <p>First Name</p>
+                                    <input type="text" max="15" min="8" placeholder="First Name">
+                                </div>
+                                <div class="last">
+                                    <p>Last Name</p>
+                                    <input type="text" max="10" min="4" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div>
+                                <div>Email</div>
+                                <div class="email">
+                                    <input type="email" name="" id="" value="o@nn.sa" disabled>
+                                    <p>Change</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container security">
+                        <div class="titleAndP-1">
+                            <h2 class="main-title">Security Info</h2>
+                            <p class="main-p">Security Information About Your Account</p>
+                        </div>
+                        <div class="setting">
+                            <div class="info">
+                                <div>
+                                    <h4>Password</h4>
+                                    <p class="in">Last Change On 25/10/2021</p>
+                                </div>
+                                <div>
+                                    <p class='out' style="background-color: #2196f3; color: white;">Change</p>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h4>Two-Factor Authentication</h4>
+                                    <p class="in">Enable/Disable The Feature</p>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input class="toggle-checkbox" type="checkbox"/>
+                                        <div class="toggle-swich"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div>
+                                    <h4>Devices</h4>
+                                    <p class="in">Check The Login Devices List</p>
+                                </div>
+                                <div>
+                                    <p class='out' style="background-color: #ccc;">Devices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container sociall">
+                        <div class="titleAndP-1">
+                            <h2 class="main-title">Social Info</h2>
+                            <p class="main-p">Social Media Information</p>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fab fa-twitter-square"></i>
+                                <p>Twitter Username</p>
+                            </div>
+                            <div>
+                                <i class="fab fa-facebook-square"></i>
+                                <p>Facebook Username</p>
+                            </div>
+                            <div>
+                                <i class="fab fa-youtube-square"></i>
+                                <p>Linkedin Username</p>
+                            </div>
+                            <div>
+                                <i class="fab fa-linkedin"></i>
+                                <p>Youtube Username</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container widgets">
+                        <div class="titleAndP-1">
+                            <h2 class="main-title">Widgets Control</h2>
+                            <p class="main-p">Hide/Show Website Widgets</p>
+                        </div>
+                        <div class="info">
+                            <input type="checkbox">
+                            <p>Yearly Tragets</p>
+                        </div>
+                        <div class="info">
+                            <input type="checkbox">
+                            <p>Tickets Statistics</p>
+                        </div>
+                        <div class="info">
+                            <input type="checkbox" checked>
+                            <p>Latest News</p>
+                        </div>
+                        <div class="info">
+                            <input type="checkbox">
+                            <p>Latest Tasks</p>
+                        </div>
+                        <div class="info">
+                            <input type="checkbox" checked>
+                            <p>Top Search Items</p>
+                        </div>
+                    </div>
+                    <div class="container backup">
+                        <div class="titleAndP-1">
+                            <h2 class="main-title">Backup Manager</h2>
+                            <p class="main-p">Control Backup Date And Loction</p>
+                        </div>
+                        <div>
+                            <div class="info">
+                                <input type="radio">
+                                <p>Daily</p>
+                            </div>
+                            <div class="info">
+                                <input type="radio" checked>
+                                <p>Weekly</p>
+                            </div>
+                            <div class="info">
+                                <input type="radio">
+                            <p>Monthly</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-bars-progress"></i>
+                                <p>Megaman</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-bars-progress"></i>
+                                <p>Zero</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-bars-progress"></i>
+                                <p>Sigma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="mem.js"></script>
+    </body>
+</html>
